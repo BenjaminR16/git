@@ -4,104 +4,523 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GameZone - Descubre los Mejores Videojuegos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     <link rel="stylesheet" href="assets/styles.css">
-    < </head>
+</head>
 
 <body>
-    <style>
-
-    </style>
-    <header class="header direccion">
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/024/553/534/small/lion-head-logo-mascot-wildlife-animal-illustration-generative-ai-png.png"
-            alt="Pájaro" style="width: 100px;">
-        <nav class="navBar">
-            <ul class="direccion">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#contac">Contactanos</a></li>
-            </ul>
-        </nav>
-        <b>+123456789</b>
-    </header>
-    <section id="hero" class="hero direccion">
-        <div>
-            <h1>
-                Titulo
-            </h1>
-            <button>Contactanos</button>
-        </div>
-
-    </section>
-    <section id="services">
-        <div class="card-seection">
-            <h2>Servicios</h2>
-            <div class="card-section">
-                <article class="card">
-                    <img src="https://www.ecartelera.com/images/noticias/72100/72193-h2.jpg" alt="">
-                    <h3>Titulo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur odit nostrum, sed deleniti
-                        nemo debitis sit placeat mollitia blanditiis dolore, quasi distinctio animi vitae adipisci
-                        asperiores! Veniam pariatur nisi natus.</p>
-                </article>
-                <article class="card">
-                    <img src="https://www.ecartelera.com/images/noticias/72100/72193-h2.jpg" alt="">
-                    <h3>Titulo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur odit nostrum, sed deleniti
-                        nemo debitis sit placeat mollitia blanditiis dolore, quasi distinctio animi vitae adipisci
-                        asperiores! Veniam pariatur nisi natus.</p>
-                </article>
-                <article class="card">
-                    <img src="https://www.ecartelera.com/images/noticias/72100/72193-h2.jpg" alt="">
-                    <h3>Titulo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur odit nostrum, sed deleniti
-                        nemo debitis sit placeat mollitia blanditiis dolore, quasi distinctio animi vitae adipisci
-                        asperiores! Veniam pariatur nisi natus.</p>
-                </article>
-                <article class="card">
-                    <img src="https://www.ecartelera.com/images/noticias/72100/72193-h2.jpg" alt="">
-                    <h3>Titulo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur odit nostrum, sed deleniti
-                        nemo debitis sit placeat mollitia blanditiis dolore, quasi distinctio animi vitae adipisci
-                        asperiores! Veniam pariatur nisi natus.</p>
-                </article>
-                <article class="card">
-                    <img src="https://www.ecartelera.com/images/noticias/72100/72193-h2.jpg" alt="">
-                    <h3>Titulo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur odit nostrum, sed deleniti
-                        nemo debitis sit placeat mollitia blanditiis dolore, quasi distinctio animi vitae adipisci
-                        asperiores! Veniam pariatur nisi natus.</p>
-                </article>
-                <article class="card">
-                    <img src="https://www.ecartelera.com/images/noticias/72100/72193-h2.jpg" alt="">
-                    <h3>Titulo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur odit nostrum, sed deleniti
-                        nemo debitis sit placeat mollitia blanditiis dolore, quasi distinctio animi vitae adipisci
-                        asperiores! Veniam pariatur nisi natus.</p>
-                </article>
-
-
+    <header class="header">
+        <div class="header-container direccion">
+            <div class="logo">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/024/553/534/small/lion-head-logo-mascot-wildlife-animal-illustration-generative-ai-png.png"
+                    alt="Logo" style="width: 50px;">
+                <span class="logo-text">GameZone</span>
+            </div>
+            <nav class="navBar">
+                <ul class="nav-links direccion">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#categories">Categorías</a></li>
+                    <li><a href="#community">Comunidad</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <b class="phone-number">+123456789</b>
             </div>
         </div>
-    </section>
-    <div>
-        <section id="contac" class="direccion">
-            <div>
-                <h2>Contactanos</h2>
-                <div>
-                    <form class="formulario">
-                        <input type="text" id="name" name="name" placeholder="Nombre">
-                        <input type="email" id="email" name="email" placeholder="Correo">
+    </header>
 
-                        <button type="submit">Enviar</button>
-                    </form>
+    <main>
+        <!-- Hero Section with Carousel -->
+        <section id="hero" class="hero direccion">
+            <div class="hero-carousel">
+                <div class="carousel-track">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide">
+                        <div class="carousel-content">
+                            <h1>Elden Ring</h1>
+                            <p>Una épica aventura de mundo abierto que redefine el género Souls</p>
+                            <a href="#" class="cta-button">Jugar Ahora</a>
+                        </div>
+                        <div class="carousel-background"
+                            style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg?t=1767883716');">
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide">
+                        <div class="carousel-content">
+                            <h1>The Witcher 3: Wild Hunt</h1>
+                            <p>La definitiva experiencia RPG con historia profunda y mundo vivo</p>
+                            <a href="#" class="cta-button">Jugar Ahora</a>
+                        </div>
+                        <div class="carousel-background"
+                            style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/capsule_616x353.jpg?t=1767883716');">
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide">
+                        <div class="carousel-content">
+                            <h1>Hollow Knight</h1>
+                            <p>Un hermoso metroidvania dibujado a mano con desafío preciso</p>
+                            <a href="#" class="cta-button">Jugar Ahora</a>
+                        </div>
+                        <div class="carousel-background"
+                            style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg');">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev" aria-label="Slide anterior">&#9664;</button>
+                    <button class="carousel-btn next" aria-label="Siguiente slide">&#9654;</button>
+                </div>
+
+                <div class="carousel-dots direccion">
+                    <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+                    <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+                    <button class="dot" data-slide="2" aria-label="Slide 3"></button>
                 </div>
             </div>
         </section>
-    </div>
 
-    <footer></footer>
+        <!-- Introduction Section -->
+        <section id="intro" class="section direccion">
+            <div class="section-content direccion">
+                <div class="intro-text">
+                    <h2 class="section-title scale-in direccion">Bienvenido a GameZone</h2>
+                    <p>Tu destino definitivo para descubrir los mejores videojuegos de todas las categorías. Desde
+                        épicas aventuras RPG hasta intensos combates de hack&slash, aquí encontrarás recomendaciones
+                        cuidadosamente seleccionadas para cada tipo de jugador.</p>
+                    <p>Explora nuestras categorías y encuentra tu próximo juego favorito.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="https://playlevel.es/images/post/es_ES_videogames/juegos.jpg"
+                        alt="Collage de videojuegos diversos" loading="lazy">
+                </div>
+            </div>
+        </section>
 
+        <!-- Games Categories Section -->
+        <section id="categories" class="section">
+            <h2 class="section-title scale-in direccion">Explora por Categorías</h2>
+
+            <!-- RPG Games -->
+            <div class="category-section">
+                <h3 class="category-title">RPG</h3>
+                <p class="category-description">Sumérgete en mundos ricos en historia y desarrollo de personajes</p>
+                <div class="games-grid">
+                    <!-- The Witcher 3 -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png');">
+                        </div>
+                        <div class="game-info">
+                            <h4>The Witcher 3: Wild Hunt</h4>
+                            <p>Una maestra obra narrativa con decisiones que realmente importan y un mundo abierto lleno
+                                de vida.</p>
+                            <span class="game-platforms">PC, PS4, Xbox One, Switch</span>
+                        </div>
+                    </div>
+
+                    <!-- Elden Ring -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/elden-ring-1645743330.jpg?crop=0.888888888888889xw:1xh;0,0');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Elden Ring</h4>
+                            <p>La colaboración entre FromSoftware y George R.R. Martin crea un mundo oscuro y fascinante
+                                para explorar.</p>
+                            <span class="game-platforms">PC, PS4, PS5, Xbox One, Xbox Series X|S</span>
+                        </div>
+                    </div>
+
+                    <!-- Persona 5 Royal -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image: url('https://assetsio.gnwcdn.com/cover_7ovpf5l.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Persona 5 Royal</h4>
+                            <p>Un elegante JRPG que combina vida escolar cotidiana con aventuras sobrenaturales en el
+                                Mundo de las Sombras.</p>
+                            <span class="game-platforms">PC, PS4, PS5</span>
+                        </div>
+                    </div>
+
+                    <!-- Divinity: Original Sin 2 -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg-uqUkC6tTHXn987kgeO6bXqnK-ypuK2zAg&s');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Divinity: Original Sin 2</h4>
+                            <p>Un RPG táctico con libertad total para abordar situaciones de múltiples maneras y una
+                                cooperativa excepcional.</p>
+                            <span class="game-platforms">PC, PS4, Xbox One, Switch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOBA Games -->
+            <div class="category-section">
+                <h3 class="category-title">MOBA</h3>
+                <p class="category-description">Combate estratégico en equipo donde cada decisión cuenta</p>
+                <div class="games-grid">
+                    <!-- League of Legends -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image: url('https://static1-es.millenium.gg/articles/9/26/32/9/@/121114-lol-article_cover_bd-1.jpg');">
+                        </div>
+                        <div class="game-info">
+                            <h4>League of Legends</h4>
+                            <p>El MOBA más popular del mundo con más de 150 campeones constantes actualizaciones y un
+                                enorme escena competitiva.</p>
+                            <span class="game-platforms">PC</span>
+                        </div>
+                    </div>
+
+                    <!-- Dota 2 -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Dota 2</h4>
+                            <p>El sucesor del mod que lo empezó todo, con profundidad estratégica sin igual y torneos de
+                                millones de dólares.</p>
+                            <span class="game-platforms">PC</span>
+                        </div>
+                    </div>
+
+                    <!-- Heroes of the Storm -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image: url('https://gaming-cdn.com/images/products/525/orig/heroes-of-the-storm-pc-mac-juego-battle-net-cover.jpg?v=1747212569');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Heroes of the Storm</h4>
+                            <p>Personajes de Blizzard luchando en un nexo cósmico con partidas más cortas y enfoque en
+                                objetivos de mapa.</p>
+                            <span class="game-platforms">PC</span>
+                        </div>
+                    </div>
+
+                    <!-- Smite -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image:url('https://cdn.cloudflare.steamstatic.com/steam/apps/386360/header.jpg');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Smite</h4>
+                            <p>Un MOBA en tercera persona donde juegas como dioses y deidades de mitologías de todo el
+                                mundo.</p>
+                            <span class="game-platforms">PC, PS4, Xbox One, Switch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Souls Games -->
+            <div class="category-section">
+                <h3 class="category-title">Souls</h3>
+                <p class="category-description">Desafío preciso y atmósfera opresiva en mundos interconectados</p>
+                <div class="games-grid">
+                    <!-- Dark Souls III -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image:url('https://cdn.cloudflare.steamstatic.com/steam/apps/374320/header.jpg');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Dark Souls III</h4>
+                            <p>La culminación de la serie Souls con combate refinado, diseño de niveles excepcional y
+                                una banda sonora inolvidable.</p>
+                            <span class="game-platforms">PC, PS4, Xbox One</span>
+                        </div>
+                    </div>
+
+                    <!-- Bloodborne -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image:url('https://upload.wikimedia.org/wikipedia/en/6/68/Bloodborne_Cover_Wallpaper.jpg');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Bloodborne</h4>
+                            <p>Una reinterpretación gótica victoriana del fórmula Souls con combate más rápido y
+                                agresivo.</p>
+                            <span class="game-platforms">PS4</span>
+                        </div>
+                    </div>
+
+                    <!-- Sekiro: Shadows Die Twice -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image:url('https://cdn.cloudflare.steamstatic.com/steam/apps/814380/header.jpg');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Sekiro: Shadows Die Twice</h4>
+                            <p>Un giro único en la fórmula con enfoque en deflectores, postura y combate de espadas
+                                intenso.</p>
+                            <span class="game-platforms">PC, PS4, Xbox One</span>
+                        </div>
+                    </div>
+
+                    <!-- Demon's Souls -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image:url('https://cdn.dlcompare.com/game_tetiere/upload/gameimage/file/f5b6-demon_s_souls.jpeg.webp');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Demon's Souls</h4>
+                            <p>El juego que empezó todo, ahora remasterizado para PS5 con gráficos impresionantes y el
+                                mismo desafío brutal.</p>
+                            <span class="game-platforms">PS5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Platform Games -->
+            <div class="category-section">
+                <h3 class="category-title">Plataformas</h3>
+                <p class="category-description">Precisión, timing y creatividad en niveles diseñados maestralmente</p>
+                <div class="games-grid">
+                    <!-- Celeste -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image:url('https://cdn.cloudflare.steamstatic.com/steam/apps/504230/header.jpg');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Celeste</h4>
+                            <p>Un plataformas ajustado que trata sobre salud mental con niveles desafiantes y una
+                                historia profundamente emotiva.</p>
+                            <span class="game-platforms">PC, PS4, Xbox One, Switch</span>
+                        </div>
+                    </div>
+
+                    <!-- Hollow Knight -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image:url('https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Hollow Knight</h4>
+                            <p>Un metroidvania dibujado a mano con exploración profunda, combate preciso y un mundo
+                                lleno de misterios.</p>
+                            <span class="game-platforms">PC, PS4, Xbox One, Switch</span>
+                        </div>
+                    </div>
+
+                    <!-- Ori and the Blind Forest -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image:url('https://cdn.cloudflare.steamstatic.com/steam/apps/387290/header.jpg');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Ori and the Blind Forest</h4>
+                            <p>Una obra de arte visual con plataformas fluidas, historia emotiva y un mundo lleno de
+                                vida y peligro.</p>
+                            <span class="game-platforms">PC, Xbox One, Switch</span>
+                        </div>
+                    </div>
+
+                    <!-- Cuphead -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image:url('https://cdn.cloudflare.steamstatic.com/steam/apps/268910/header.jpg');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Cuphead</h4>
+                            <p>Un run and gun inspirado en la animación de los años 30 con jefes desafiantes y
+                                estilo
+                                visual único.</p>
+                            <span class="game-platforms">PC, PS4, Xbox One, Switch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hack&Slash Games -->
+            <div class="category-section">
+                <h3 class="category-title">Hack&Slash</h3>
+                <p class="category-description">Combate fluido, combos espectaculares y acción sin parar</p>
+                <div class="games-grid">
+                    <!-- Devil May Cry 5 -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image:url('https://cdn.cloudflare.steamstatic.com/steam/apps/601150/header.jpg');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Devil May Cry 5</h4>
+                            <p>El regreso triunfal de Dante con combate estilizado, múltiples personajes
+                                jugables y una
+                                historia que conecta la saga.</p>
+                            <span class="game-platforms">PC, PS4, Xbox One</span>
+                        </div>
+                    </div>
+
+                    <!-- Bayonetta 2 -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image:url('https://cdn.cloudflare.steamstatic.com/steam/apps/460790/header.jpg');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Bayonetta 2</h4>
+                            <p>Brujas, ángeles y demonios en un baile mortal de combos extravagantes y
+                                acción
+                                sobrecargada.</p>
+                            <span class="game-platforms">Switch</span>
+                        </div>
+                    </div>
+
+                    <!-- Nier: Automata -->
+                    <div class="game-card">
+                        <div class="game-image"
+                            style="background-image:url('https://cdn.cloudflare.steamstatic.com/steam/apps/524220/header.jpg');">
+                        </div>
+                        <div class="game-info">
+                            <h4>Nier: Automata</h4>
+                            <p>Androides en un mundo post-apocalíptico con múltiples finales,
+                                historia filosófica y
+                                combate fluido.</p>
+                            <span class="game-platforms">PC, PS4, Xbox One</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Community/Events Section -->
+        <section id="community" class="section direccion">
+            <div class="community-content direccion">
+                <div>
+                    <h2 class="section-title scale-in direccion">Únete a la Comunidad GameZone</h2>
+                    <p>Conéctate con otros jugadores, participa en eventos y descubre contenido exclusivo.</p>
+                    <button class="cta-button">Unirse Ahora</button>
+                </div>
+                <div class="community-image">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/1019/991/691/xbox-control-playstation-3-video-games-xbox-hd-art-wallpaper-thumb.jpg"
+                        alt="Grupo de jugadores disfrutando videojuegos juntos" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Games Section -->
+        <section id="upcoming" class="section">
+            <h2 class="section-title scale-in direccion">Próximos Lanzamientos</h2>
+            <p class="section-description direccion">Los juegos más esperados que llegarán pronto a nuestras plataformas
+                favoritas</p>
+            <div class="upcoming-grid">
+                <!-- Upcoming Game 1 -->
+                <div class="upcoming-card fade-in">
+                    <div class="upcoming-image"
+                        style="background-image: url('https://gaming-cdn.com/images/products/16148/orig/final-fantasy-xvi-pc-juego-steam-cover.jpg?v=1749483649');">
+                    </div>
+                    <div class="upcoming-info">
+                        <h3>Final Fantasy XVI</h3>
+                        <p class="game-platforms">PS5 | Fecha: Junio 2026</p>
+                        <p>La próxima entrega de la legendaria saga Final Fantasy regresa con un mundo de fantasía
+                            oscura y un sistema de combate en tiempo real revolucionario.</p>
+                    </div>
+                </div>
+
+                <!-- Upcoming Game 2 -->
+                <div class="upcoming-card fade-in">
+                    <div class="upcoming-image"
+                        style="background-image: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1716740/capsule_616x353.jpg?t=1778168061');">
+                    </div>
+                    <div class="upcoming-info">
+                        <h3>Starfield</h3>
+                        <p class="game-platforms">PC, Xbox Series X|S | Fecha: Septiembre 2026</p>
+                        <p>El primer universo nuevo de Bethesda en 25 años ofrece exploración espacial sin límites con
+                            miles de planetas para descubrir.</p>
+                    </div>
+                </div>
+
+                <!-- Upcoming Game 3 -->
+                <div class="upcoming-card fade-in">
+                    <div class="upcoming-image"
+                        style="background-image: url('https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000063714/956c12eb1a4c9e68b494cca7efd23d20ba8a789a5eb02589affae64bc6bc3282');">
+                    </div>
+                    <div class="upcoming-info">
+                        <h3>The Legend of Zelda: Tears of the Kingdom</h3>
+                        <p class="game-platforms">Switch | Fecha: Marzo 2026</p>
+                        <p>La secuela directa de Breath of the Wild lleva la aventura a nuevas alturas con mecánicas de
+                            construcción y un cielo lleno de islas flotantes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game News Section -->
+        <section id="news" class="section">
+            <h2 class="section-title scale-in direccion">Noticias y Análisis</h2>
+            <p class="section-description direccion">Las últimas novedades, análisis profundos y contenido exclusivo del
+                mundo de los videojuegos</p>
+            <div class="news-grid">
+                <!-- News Article 1 -->
+                <div class="news-card slide-up">
+                    <div class="news-image"
+                        style="background-image: url('https://framegames.es/wp-content/uploads/2025/01/La-evolucion-de-la-inteligencia-artificial-en-videojuegos-y-animacion.png');">
+                    </div>
+                    <div class="news-content">
+                        <h3>El Impacto de la IA en el Desarrollo de Videojuegos Modernos</h3>
+                        <p class="news-date">15 de Mayo, 2026</p>
+                        <p>Exploramos cómo la inteligencia artificial está revolucionando la creación de mundos de
+                            juego, desde la generación procedural de niveles hasta el comportamiento más realista de los
+                            NPCs.</p>
+                        <a href="#" class="news-link">Leer más →</a>
+                    </div>
+                </div>
+
+                <!-- News Article 2 -->
+                <div class="news-card slide-up">
+                    <div class="news-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1616600081457-19a27b2d4f70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fFByb2dyYW1taW5nJTIwd2l0aCUyMFRlY2hub2xvZ3klMjB8fGVufDB8fHx8MTY1OTgzODQxMTU..');">
+                    </div>
+                    <div class="news-content">
+                        <h3>Los Mejores Accesorios para Gamers en 2026</h3>
+                        <p class="news-date">10 de Mayo, 2026</p>
+                        <p>Desde teclados mecánicos de última generación hasta auriculares con audio espacial, revisamos
+                            los periféricos que están elevando la experiencia de juego a nuevos niveles.</p>
+                        <a href="#" class="news-link">Leer más →</a>
+                    </div>
+                </div>
+
+                <!-- News Article 3 -->
+                <div class="news-card slide-up">
+                    <div class="news-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1616600081465-20a27b2d4f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fFdhciUyMHdpdGglMjBOb3JkZWlufGVufDB8fHx8MTY1OTgzODQyMjg..');">
+                    </div>
+                    <div class="news-content">
+                        <h3>Análisis: ¿Vale la pena esperar a la PS6?</h3>
+                        <p class="news-date">5 de Mayo, 2026</p>
+                        <p>Con rumores sobre la próxima generación de consolas circulando, analizamos qué sabemos hasta
+                            ahora y si realmente vale la pena esperar antes de invertir en el hardware actual.</p>
+                        <a href="#" class="news-link">Leer más →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content direccion">
+            <p>&copy; 2026 GameZone. Todos los derechos reservados.</p>
+            <div class="footer-links direccion">
+                <a href="#">Términos de Servicio</a>
+                <a href="#">Política de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
